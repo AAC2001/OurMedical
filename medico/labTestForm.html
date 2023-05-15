@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lab Test Form</title>
+    <link rel="stylesheet" href="labTestForm.css">
+</head>
+
+<body>
+    <form action="">
+        <section>
+            <aside>
+                <img src="Images/Lab-Test/lab-test.jpg" alt="">
+            </aside>
+            <div id="form-details">
+                <article class="patient-details">
+                    <h2>1. Your Contact Details</h2>
+                    <input type="text" name="full_name" placeholder="Full Name" required>
+                    <input type="text" name="id" placeholder="Patient Id if exists"><br>
+                    <input type="number" name="contact_number" placeholder="Contact Number" required>
+                    <input type="email" name="email" placeholder="Email Id">
+                </article>
+
+                <article class="patient-details">
+                    <h2>2. Address</h2>
+                    <input type="text" name="house-no" placeholder="House Number" required>
+                    <input type="text" name="street" placeholder="Street" required><br>
+                    <input type="text" name="area" placeholder="Area" required> <br>
+                    <h4>District</h4>
+                    <select name="district" id="district" required>
+                        <option value="choose">Choose</option>
+                        <option value="AGR">Agra</option>
+                        <option value="NDL">New Delhi</option>
+                        <option value="GRG">Gurugram</option>
+                        <option value="CHE">Chennai</option>
+                        <option value="LKO">Lucknow</option>
+                        <option value="JPR">Jaipur</option>
+                        <option value="NOD">Noida</option>
+                    </select>
+                </article>
+
+                <article>
+                    <h2>3. Choose the Test type</h2>
+                    <p>(Check atleast one box without fail)</p>
+                    <input type="checkbox" id="cb1" name="option1" value="CBC">
+                    <label for="cb1">CBC</label>
+                    <br>
+                    <input type="checkbox" id="cb2" name="option2" value="Complete Urine">
+                    <label for="cb2">Complete Urine</label>
+                    <br>
+                    <input type="checkbox" id="cb3" name="option3" value="Lipid Profile">
+                    <label for="cb3">Lipid Profile</label>
+                    <br>
+                    <input type="checkbox" id="cb4" name="option4" value="TSH">
+                    <label for="cb4">Thyroid Stimulating Hormone(TSH)</label>
+                    <br>
+                    <input type="checkbox" id="cb5" name="option5" value="Glucose Test">
+                    <label for="cb5">Glucose Test</label>
+                </article>
+
+                <article>
+                    <h2>4. Do you want a hard copy of the report?</h2>
+                    <input type="radio" id="r1" name="option" value="Yes" required>
+                    <label for="r1">Yes</label>
+                    <br>
+                    <input type="radio" id="r2" name="option" value="No">
+                    <label for="r2">No</label>
+                </article>
+
+                <article>
+                    <h2>5. Select Your Comfortable Date and Time</h2>
+                    <input id="special" type="date" value="Date" required>
+                    <input id="special" type="time" value="time" required>
+                </article>
+            </div>
+        </section>
+
+        <div id="button">
+            <input type="reset">
+            <input type="submit">
+        </div>
+    </form>
+</body>
+
+</html>
